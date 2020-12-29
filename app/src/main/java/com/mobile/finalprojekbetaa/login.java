@@ -41,13 +41,13 @@ public class login extends AppCompatActivity {
                 String nama = idnama.getText().toString().trim();
                 String password = pass.getText().toString().trim();
 
-                com.mobile.finalprojekbetaa.userEntity userEntity = dao.login(nama,password);
+                userEntity userEntity = dao.login(nama,password);
                 if (userEntity != null){
-                    Intent i = new Intent(com.mobile.finalprojekbetaa.login.this, bottomnav.class);
+                    Intent i = new Intent(login.this, bottomnav.class);
                     startActivity(i);
                     finish();
                 }else{
-                    Toast.makeText(com.mobile.finalprojekbetaa.login.this," salah atau tidak terdaftar ",Toast.LENGTH_SHORT
+                    Toast.makeText(login.this," salah atau tidak terdaftar ",Toast.LENGTH_SHORT
                     ).show();
                 }
             }
@@ -56,7 +56,7 @@ public class login extends AppCompatActivity {
         daftarr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(com.mobile.finalprojekbetaa.login.this, com.mobile.finalprojekbetaa.daftar.class);
+                Intent a = new Intent(login.this, daftar.class);
                 startActivity(a);
             }
         });

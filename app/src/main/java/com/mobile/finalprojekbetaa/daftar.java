@@ -28,7 +28,7 @@ public class daftar extends AppCompatActivity {
         etkonpassword = findViewById(R.id.etkonpassword);
         daftar = findViewById(R.id.daftar);
 
-        dao = Room.databaseBuilder(this, com.mobile.finalprojekbetaa.Databaseapp.class,"databaselog")
+        dao = Room.databaseBuilder(this, Databaseapp.class,"databaselog")
                 .allowMainThreadQueries().build().userDao();
         daftar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,10 +41,10 @@ public class daftar extends AppCompatActivity {
                 if (pass.equals(konpass)){
                     userEntity userEntity = new userEntity(nama,email,pass);
                     dao.registerdao(userEntity);
-                    Intent pindahlogin = new Intent(com.mobile.finalprojekbetaa.daftar.this, com.mobile.finalprojekbetaa.login.class);
+                    Intent pindahlogin = new Intent(daftar.this, login.class);
                     startActivity(pindahlogin);
                 }else {
-                    Toast.makeText(com.mobile.finalprojekbetaa.daftar.this," salah lur",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(daftar.this," salah lur",Toast.LENGTH_SHORT).show();
                 }
             }
         });

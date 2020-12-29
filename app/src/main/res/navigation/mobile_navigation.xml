@@ -22,4 +22,9 @@
         android:name="com.mobile.finalprojekbetaa.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/navigation_akun"
+        android:name="com.mobile.finalprojekbetaa.ui.AkunFragment"
+        android:label="@string/titile_akun"
+        tools:layout="@layout/fragment_akun" />
 </navigation>

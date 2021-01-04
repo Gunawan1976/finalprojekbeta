@@ -15,7 +15,7 @@ public class daftar extends AppCompatActivity {
     Button daftar;
     Button masuk;
 
-    private userDao dao;
+    private UserDao dao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,12 +39,12 @@ public class daftar extends AppCompatActivity {
                 String konpass = etkonpassword.getText().toString().trim();
 
                 if (pass.equals(konpass)){
-                    userEntity userEntity = new userEntity(nama,email,pass);
+                    UserEntity userEntity = new UserEntity(nama,email,pass);
                     dao.registerdao(userEntity);
                     Intent pindahlogin = new Intent(daftar.this, login.class);
                     startActivity(pindahlogin);
                 }else {
-                    Toast.makeText(daftar.this," salah lur",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(daftar.this,"password tidak sama",Toast.LENGTH_SHORT).show();
                 }
             }
         });

@@ -11,14 +11,12 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
-import com.mobile.finalprojekbetaa.ui.home.HomeFragment;
-
 public class login extends AppCompatActivity {
     EditText idnama, pass;
     TextView daftarr;
     Button login;
-    userDao dao;
-    com.mobile.finalprojekbetaa.Databaseapp db;
+    UserDao dao;
+    Databaseapp db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +28,7 @@ public class login extends AppCompatActivity {
         login = findViewById(R.id.loginn);
         daftarr = findViewById(R.id.daftar);
 
-        db = Room.databaseBuilder(this, com.mobile.finalprojekbetaa.Databaseapp.class,"databaselog")
+        db = Room.databaseBuilder(this, Databaseapp.class,"databaselog")
                 .allowMainThreadQueries().build();
         dao = db.userDao();
 
@@ -41,7 +39,7 @@ public class login extends AppCompatActivity {
                 String nama = idnama.getText().toString().trim();
                 String password = pass.getText().toString().trim();
 
-                userEntity userEntity = dao.login(nama,password);
+                UserEntity userEntity = dao.login(nama,password);
                 if (userEntity != null){
                     Intent i = new Intent(login.this, bottomnav.class);
                     startActivity(i);

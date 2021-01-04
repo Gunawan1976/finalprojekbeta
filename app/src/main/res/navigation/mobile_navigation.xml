@@ -7,24 +7,24 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.mobile.finalprojekbetaa.ui.home.HomeFragment"
+        android:name="com.mobile.finalprojekbetaa.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.mobile.finalprojekbetaa.ui.dashboard.DashboardFragment"
+        android:id="@+id/navigation_history"
+        android:name="com.mobile.finalprojekbetaa.HitoryFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_history" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.mobile.finalprojekbetaa.ui.notifications.NotificationsFragment"
+        android:id="@+id/navigation_bantuan"
+        android:name="com.mobile.finalprojekbetaa.BantuanFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_bantuan" />
     <fragment
         android:id="@+id/navigation_akun"
-        android:name="com.mobile.finalprojekbetaa.ui.AkunFragment"
+        android:name="com.mobile.finalprojekbetaa.AkunFragment"
         android:label="@string/titile_akun"
         tools:layout="@layout/fragment_akun" />
 </navigation>

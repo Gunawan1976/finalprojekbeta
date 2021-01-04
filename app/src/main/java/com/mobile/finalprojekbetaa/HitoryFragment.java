@@ -1,4 +1,4 @@
-package com.mobile.finalprojekbetaa.ui.dashboard;
+package com.mobile.finalprojekbetaa;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.mobile.finalprojekbetaa.R;
 
 public class HitoryFragment extends Fragment {
 

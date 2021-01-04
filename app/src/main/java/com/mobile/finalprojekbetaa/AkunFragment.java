@@ -1,4 +1,4 @@
-package com.mobile.finalprojekbetaa.ui;
+package com.mobile.finalprojekbetaa;
 
 import android.os.Bundle;
 

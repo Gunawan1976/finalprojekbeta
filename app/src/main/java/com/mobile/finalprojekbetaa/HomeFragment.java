@@ -1,4 +1,4 @@
-package com.mobile.finalprojekbetaa.ui.home;
+package com.mobile.finalprojekbetaa;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,8 +10,6 @@ import android.widget.ImageButton;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.mobile.finalprojekbetaa.R;
-import com.mobile.finalprojekbetaa.lapor_sampah;
 
 public class HomeFragment extends Fragment {
     ImageButton imageButton1;

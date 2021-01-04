@@ -2,7 +2,7 @@
     <string name="app_name">finalprojekbetaa</string>
     <string name="title_activity_bottomnav">MainActivity</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">history</string>
+    <string name="title_dashboard">History</string>
     <string name="title_notifications">Bantuan</string>
     <string name="titile_akun">Akun</string>
     <!-- TODO: Remove or change this placeholder text -->

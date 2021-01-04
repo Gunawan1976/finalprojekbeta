@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lapor_sampah"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/normal">
+
+        <ImageView
+            android:id="@+id/imagecam"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_baseline_camera_24"
+            tools:ignore="ContentDescription" />
+
+
+    </RelativeLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputtext"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/etjudul"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Judul"
+            tools:ignore="Autofill,HardcodedText,TextFields" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputtext2"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/etdeskripsi"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Deskirpsi"
+            tools:ignore="Autofill,HardcodedText,TextFields" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputtext3"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/etalamat"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Alamat"
+            tools:ignore="Autofill,HardcodedText,TextFields" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btn_tambah"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal"
+        android:text="Tambah"
+        android:textAllCaps="false"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

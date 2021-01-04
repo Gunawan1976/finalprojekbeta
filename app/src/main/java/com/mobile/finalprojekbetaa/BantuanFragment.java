@@ -1,4 +1,4 @@
-package com.mobile.finalprojekbetaa.ui.notifications;
+package com.mobile.finalprojekbetaa;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
